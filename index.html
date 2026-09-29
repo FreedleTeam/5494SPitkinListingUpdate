@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>5494 S Pitkin Street Weekly Listing Update</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --navy:#3057A7; --blue:#5EA1C3; --gold:#FFD372; --gray:#575B5C;
+  --bg:#FFFFFF; --ink:#1F2A3D; --soft:#EEF4F9; --line:#D9E2EC; --card:#FFFFFF;
+  --head:"Gotham Medium","Gotham",Montserrat,"Helvetica Neue",Arial,sans-serif;
+  --sub:"Gotham Book","Gotham",Montserrat,"Helvetica Neue",Arial,sans-serif;
+  --body:"Roboto Light",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --navy:#8FB0F0; --blue:#7DB8D6; --gray:#A9B0B3;
+    --bg:#121821; --ink:#E6ECF3; --soft:#1B2532; --line:#2C3A4B; --card:#172030;
+  }
+}
+:root[data-theme="dark"]{
+  --navy:#8FB0F0; --blue:#7DB8D6; --gray:#A9B0B3;
+  --bg:#121821; --ink:#E6ECF3; --soft:#1B2532; --line:#2C3A4B; --card:#172030;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:auto;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-weight:300;font-size:17px;line-height:1.6;-webkit-text-size-adjust:100%}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+a{color:var(--navy);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+strong{font-weight:500}
+
+/* Header */
+header.top{border-top:6px solid var(--navy);padding:28px 0 8px}
+.brand{font-family:var(--head);font-weight:500;color:var(--navy);font-size:15px;letter-spacing:.02em}
+.brand span{color:var(--gray);font-family:var(--sub);font-weight:400}
+h1{font-family:var(--head);font-weight:500;color:var(--navy);font-size:clamp(30px,5.4vw,46px);line-height:1.1;margin:22px 0 10px;letter-spacing:-.01em}
+.meta{font-family:var(--sub);color:var(--gray);font-size:16px;margin:0}
+.meta b{font-weight:500;color:var(--ink)}
+.lede{font-size:18px;margin:18px 0 0;max-width:66ch}
+
+
+/* Top pricing path */
+.path{display:grid;grid-template-columns:1fr 1.2fr 1.2fr;gap:10px;margin:26px 0 0}
+.pstep{border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:2px;position:relative}
+.pstep .pl{font-family:var(--sub);font-weight:500;font-size:13px;color:var(--gray)}
+.pstep .pv{font-family:var(--head);font-weight:500;font-size:22px;color:var(--navy);line-height:1.2}
+.pstep .pn{font-size:13px;color:var(--gray)}
+.pstep.easy{border:2px dashed var(--gold)}
+.pstep.rec{background:#3057A7;border-color:#3057A7}
+.pstep.rec .pl,.pstep.rec .pv,.pstep.rec .pn{color:#fff}
+@media (max-width:620px){.path{grid-template-columns:1fr}}
+
+/* Snapshot */
+.snap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:30px 0 8px}
+.m{background:var(--card);padding:18px 16px}
+.m .v{font-family:var(--head);font-weight:500;font-size:30px;color:var(--navy);line-height:1.1}
+.m .l{font-family:var(--sub);font-size:14px;color:var(--gray);margin-top:4px}
+.m.hl{background:#3057A7}
+.m.hl .v,.m.hl .l{color:#fff}
+@media (max-width:560px){.snap{grid-template-columns:repeat(2,1fr)}.m .v{font-size:26px}}
+
+/* Sections */
+section{padding:34px 0 6px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-family:var(--head);font-weight:500;color:var(--navy);font-size:25px;line-height:1.2;margin:0 0 12px}
+h3{font-family:var(--sub);font-weight:500;font-size:18px;margin:22px 0 8px;color:var(--ink)}
+p{margin:0 0 14px;max-width:70ch}
+.note{font-size:14px;color:var(--gray)}
+
+/* Tables */
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:8px 0 12px;border:1px solid var(--line);border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:15px;min-width:560px}
+.wide table{min-width:780px}
+th{background:var(--navy);color:#fff;font-family:var(--sub);font-weight:500;text-align:left;padding:10px 12px;white-space:nowrap}
+td{padding:10px 12px;border-top:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}
+td.n,th.n{text-align:right;white-space:nowrap}
+tr.ours td{background:var(--soft);font-weight:500}
+tr.group td{background:transparent;font-family:var(--sub);font-weight:500;color:var(--gray);font-size:13px;padding-top:14px;border-top:1px solid var(--line)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) th{background:#26406F}}
+:root[data-theme="dark"] th{background:#26406F}
+
+/* Save rate chart: the one bold moment */
+.rate{margin:18px 0 22px;padding:20px 18px 14px;background:var(--soft);border-radius:10px}
+.rate h3{margin-top:0}
+.bar{display:grid;grid-template-columns:150px 1fr 56px;align-items:center;gap:12px;margin:10px 0;font-size:15px}
+.track{position:relative;height:22px;background:var(--card);border-radius:4px;border:1px solid var(--line)}
+.fill{position:absolute;inset:0 auto 0 0;background:var(--blue);border-radius:3px}
+.bar.ours .fill{background:var(--navy)}
+.bar.ours{font-weight:500}
+.bench{position:absolute;top:-6px;bottom:-6px;width:2px;background:var(--gold);left:66.67%}
+.pct{font-family:var(--head);font-weight:500;text-align:right}
+.legend{font-size:13px;color:var(--gray);margin-top:8px;display:flex;align-items:center;gap:8px}
+.legend i{display:inline-block;width:14px;height:3px;background:var(--gold)}
+@media (max-width:520px){.bar{grid-template-columns:1fr 50px}.bar .who{grid-column:1 / -1;margin-bottom:-6px}}
+
+/* Takeaways and callouts */
+ul.take{padding-left:20px;margin:6px 0 16px}
+ul.take li{margin:0 0 8px;max-width:68ch}
+.callout{border-left:4px solid var(--gold);padding:4px 0 4px 16px;margin:14px 0}
+
+/* Price step */
+.price{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;margin:16px 0 18px;max-width:560px}
+.price div{border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.price .to{border:0;padding:0;color:var(--gray);font-family:var(--sub);font-size:14px;text-align:center}
+.price .new{background:var(--navy);border-color:var(--navy)}
+.price .new .v,.price .new .l{color:#fff}
+.price .v{font-family:var(--head);font-weight:500;font-size:26px;color:var(--navy)}
+.price .l{font-size:14px;color:var(--gray)}
+
+
+/* Pricing options */
+.ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:16px 0 20px}
+.tier{border:1px solid var(--line);border-radius:10px;padding:16px;background:var(--card);display:flex;flex-direction:column;gap:4px}
+.tier .tl{font-family:var(--sub);font-weight:500;font-size:14px;color:var(--gray)}
+.tier .tv{font-family:var(--head);font-weight:500;font-size:28px;color:var(--navy);line-height:1.15}
+.tier .tc{font-size:15px;font-weight:400}
+.tier .ts{font-size:14px;color:var(--gray);margin-top:6px;padding-top:8px;border-top:1px solid var(--line)}
+.tier.easy{border:2px dashed var(--gold)}
+.tier.rec{background:#3057A7;border-color:#3057A7}
+.tier.rec .tl,.tier.rec .tv,.tier.rec .tc,.tier.rec .ts{color:#fff}
+.tier.rec .ts{border-top-color:rgba(255,255,255,.35)}
+@media (max-width:620px){.ladder{grid-template-columns:1fr}}
+@media print{.ladder{break-inside:avoid}}
+
+/* Steps: a real sequence */
+ol.steps{list-style:none;padding:0;margin:8px 0 16px;counter-reset:s}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:36px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--line)}
+ol.steps li:first-child{border-top:0}
+ol.steps li::before{content:counter(s);font-family:var(--head);font-weight:500;color:var(--navy);background:var(--soft);width:32px;height:32px;border-radius:50%;display:grid;place-items:center}
+ol.steps b{font-family:var(--sub);font-weight:500;display:block}
+
+.sign{margin:22px 0 8px}
+.sign b{font-family:var(--head);font-weight:500;color:var(--navy);display:block}
+footer{border-top:1px solid var(--line);padding:18px 0 36px;font-size:14px;color:var(--gray)}
+footer a{color:var(--gray)}
+
+@media print{
+  :root{--bg:#fff;--ink:#1F2A3D;--card:#fff;--soft:#EEF4F9;--line:#D9E2EC;--navy:#3057A7;--gray:#575B5C}
+  body{font-size:12pt}
+  .tscroll{overflow:visible;border:0}
+  table,.wide table{min-width:0;font-size:10pt}
+  section{break-inside:auto}
+  .snap,.rate,.price,table,ol.steps li{break-inside:avoid}
+  h2{break-after:avoid}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="brand">Freedle &amp; Associates <span>&nbsp;|&nbsp; Weekly Listing Update</span></div>
+  <h1>5494 S Pitkin Street Weekly Listing Update</h1>
+  <p class="meta">Centennial, Colorado. Report date September 29, 2026.</p>
+  <p class="meta">Current price <b>$569,000</b>. Recommended price <b>$550,000</b>.</p>
+  <p class="lede">This week's update covers online engagement, how our Zillow performance compares with two close competitors, current market activity, and our plan to reposition and relaunch the listing.</p>
+</header>
+
+<div class="path" aria-label="Pricing path">
+  <div class="pstep"><span class="pl">Today</span><span class="pv">$569,000</span><span class="pn">Current price</span></div>
+  <div class="pstep easy"><span class="pl">The easier step</span><span class="pv">$560,000</span><span class="pn">Feels better, same buyers</span></div>
+  <div class="pstep rec"><span class="pl">Our recommendation</span><span class="pv">$550,000</span><span class="pn">New price point, relaunched as new</span></div>
+</div>
+
+<div class="snap" role="list">
+  <div class="m" role="listitem"><div class="v">917</div><div class="l">Zillow views</div></div>
+  <div class="m" role="listitem"><div class="v">65</div><div class="l">Zillow saves</div></div>
+  <div class="m" role="listitem"><div class="v">7.1%</div><div class="l">Zillow save rate</div></div>
+  <div class="m" role="listitem"><div class="v">5,087</div><div class="l">Homes.com views</div></div>
+  <div class="m" role="listitem"><div class="v">0</div><div class="l">Showings this week</div></div>
+  <div class="m" role="listitem"><div class="v">59</div><div class="l">Days on Zillow</div></div>
+</div>
+
+<section>
+  <h2>Online exposure has slowed</h2>
+  <p>I know a price conversation can feel discouraging. The professional photography, listing preparation, and video and social content we produced put this home in front of thousands of people, and online exposure has been okay. But it has not held steady since the home was listed; it has declined. Fewer buyers are reaching the listing each day, and that attention is not yet turning into showings. We had no showings this week and therefore no new buyer feedback to share.</p>
+
+  <div class="tscroll">
+    <table>
+      <thead><tr><th>Channel</th><th class="n">Current activity</th><th>Engagement detail</th></tr></thead>
+      <tbody>
+        <tr><td>Homes.com</td><td class="n"><strong>5,087 views</strong></td><td>Reported total views</td></tr>
+        <tr><td>Instagram</td><td class="n"><strong>2,897 views</strong></td><td>Social reach from our content</td></tr>
+        <tr><td>Zillow</td><td class="n"><strong>917 views</strong></td><td>65 saves, 7.1% save rate</td></tr>
+        <tr><td>Realtor.com</td><td class="n"><strong>100 views</strong></td><td>Reported total views</td></tr>
+        <tr><td>YouTube</td><td class="n"><strong>49 views</strong></td><td>Our property tour video</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Each platform counts engagement differently, so these figures are channel-specific activity rather than one combined total.</p>
+  <p>The Instagram content and YouTube property tour are extra marketing many listings in this price range do not receive, and they are part of why the home has been seen as widely as it has.</p>
+</section>
+
+<section>
+  <h2>How Zillow buyers are responding</h2>
+  <p>The listing has generated 917 Zillow views and 65 saves. About 7.1% of viewers have saved the property, roughly one out of every 14 visitors. That is reasonably close to Tempe, a highly comparable nearby listing at 8.1%, though both trail Hannibal at 10.8% and fall below the 10% level I look for in a listing that is building real momentum.</p>
+  <p>The larger gap is traffic. Pitkin is averaging 15.5 Zillow views per day, compared with 38.2 for Tempe and 46.8 for Hannibal. The buyers who find our home are engaging at a comparable rate; fewer buyers are finding it each day. Our focus is on converting the buyers who see the home and bringing more qualified buyers to it.</p>
+  <div class="rate" aria-label="Zillow save rate comparison">
+    <h3>Save rate compared with nearby competition</h3>
+    <div class="bar ours"><span class="who">5494 S Pitkin St</span><div class="track"><div class="fill" style="width:47.3%"></div><div class="bench"></div></div><span class="pct">7.1%</span></div>
+    <div class="bar"><span class="who">6063 S Tempe Way</span><div class="track"><div class="fill" style="width:53.7%"></div><div class="bench"></div></div><span class="pct">8.1%</span></div>
+    <div class="bar"><span class="who">5703 S Hannibal Way</span><div class="track"><div class="fill" style="width:71.8%"></div><div class="bench"></div></div><span class="pct">10.8%</span></div>
+    <div class="legend"><i></i>10% benchmark</div>
+  </div>
+  <div class="rate" aria-label="Zillow views per day comparison">
+    <h3>Zillow views per day</h3>
+    <div class="bar ours"><span class="who">5494 S Pitkin St</span><div class="track"><div class="fill" style="width:33.1%"></div></div><span class="pct">15.5</span></div>
+    <div class="bar"><span class="who">6063 S Tempe Way</span><div class="track"><div class="fill" style="width:81.6%"></div></div><span class="pct">38.2</span></div>
+    <div class="bar"><span class="who">5703 S Hannibal Way</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="pct">46.8</span></div>
+    <div class="legend">Averaged over each listing's days on Zillow: Pitkin 59, Tempe 26, Hannibal 29.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Zillow competitor comparison</h2>
+  <div class="tscroll wide">
+    <table>
+      <thead><tr>
+        <th>Property</th><th class="n">Price</th><th class="n">Sq ft</th><th class="n">Days on Zillow</th><th class="n">Views</th><th class="n">Saves</th><th class="n">Save rate</th><th class="n">Views/day</th><th class="n">Saves/day</th><th class="n">Views per save</th>
+      </tr></thead>
+      <tbody>
+        <tr class="ours"><td>5494 S Pitkin St (our listing)</td><td class="n">$569,000</td><td class="n">3,310</td><td class="n">59</td><td class="n">917</td><td class="n">65</td><td class="n">7.1%</td><td class="n">15.5</td><td class="n">1.10</td><td class="n">14.1</td></tr>
+        <tr><td><a href="https://www.zillow.com/homedetails/6063-S-Tempe-Way-Centennial-CO-80015/13122230_zpid/">6063 S Tempe Way</a></td><td class="n">$574,900</td><td class="n">3,466</td><td class="n">26</td><td class="n">993</td><td class="n">80</td><td class="n">8.1%</td><td class="n">38.2</td><td class="n">3.1</td><td class="n">12.4</td></tr>
+        <tr><td><a href="https://www.zillow.com/homedetails/5703-S-Hannibal-Way-Centennial-CO-80015/13119410_zpid/">5703 S Hannibal Way</a></td><td class="n">$660,000</td><td class="n">2,890</td><td class="n">29</td><td class="n">1,357</td><td class="n">146</td><td class="n">10.8%</td><td class="n">46.8</td><td class="n">5.0</td><td class="n">9.3</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <ul class="take">
+    <li><strong>Tempe, our closest match, is drawing far more daily traffic.</strong> At 4 beds, 3 baths, 3,466 square feet, and $574,900, it has drawn 993 views and 80 saves in 26 days, about two and a half times our daily traffic. A newer listing date is part of that advantage, which is exactly what our relaunch is designed to recapture.</li>
+    <li><strong>Hannibal converts viewers best.</strong> Priced about $91,000 above us with less finished space, it earns one save for roughly every nine viewers.</li>
+    <li><strong>Our conversion is close; our reach is the bigger gap.</strong> At one save per 14 viewers, Pitkin is near Tempe's pace, but it receives a fraction of the daily views. A fresh price and a relaunch address both.</li>
+  </ul>
+  <h3>How we compare with <a href="https://www.zillow.com/homedetails/6063-S-Tempe-Way-Centennial-CO-80015/13122230_zpid/">6063 S Tempe Way</a></h3>
+  <p>Tempe is the home buyers are most likely to weigh against ours, and it has real advantages. It was built in 1998, making it newer than our home. It sits in Saddle Rock Ridge, a more desirable neighborhood close to Southlands. Its yard does not need any work, and its vaulted-ceiling great room is a significant difference buyers notice the moment they walk in.</p>
+  <p>Even with those advantages, and a price only $5,900 above ours, Tempe has now been on the market for 26 days. A buyer comparing the two at nearly the same price is likely to choose Tempe. Our price needs to give buyers a clear reason to choose our home instead.</p>
+</section>
+
+<section>
+  <h2>Why the rate environment matters</h2>
+  <p><strong>The recent rise in mortgage rates has been meaningful.</strong> Freddie Mac reported that the national average 30-year fixed mortgage rate reached 7.03% on September 24, up from 6.95% one week earlier and 6.66% on August 27. Individual loan quotes will vary, but buyers in this price range are often very payment-sensitive. When rates move higher quickly, buyers may reduce their price ceiling, delay showings, or become more selective about which homes they tour.</p>
+  <p class="note">Source: <a href="https://www.freddiemac.com/pmms">Freddie Mac Primary Mortgage Market Survey, September 24, 2026</a></p>
+</section>
+
+<section>
+  <h2>Relaunching the listing as new</h2>
+  <p>Along with the price change, I plan to let the current listing expire and re-list it the next day. That resets the home's days on market and presents it to buyers as a brand new listing, which puts it back into new-listing alerts and in front of buyers who may have scrolled past it. Newer listings like Tempe are drawing far more daily traffic than we are, and a fresh listing date helps close that gap.</p>
+  <div class="callout"><p>I want to be upfront with you: I will be formally reprimanded and fined for doing this. I only do it once a year to avoid greater consequences, and I am choosing to take that penalty on myself as an investment in selling your home.</p></div>
+  <p>To make the relaunch feel new at first glance, I will switch the lead photo and add new photos featuring the rocks and the stained deck in front.</p>
+</section>
+
+<section>
+  <h2>Our Recommendation</h2>
+  <div class="ladder" aria-label="Pricing options">
+    <div class="tier">
+      <div class="tl">Where we are today</div>
+      <div class="tv">$569,000</div>
+      <div class="tc">Current price</div>
+      <div class="ts">Seen by buyers searching the $550,000 to $575,000 range</div>
+    </div>
+    <div class="tier easy">
+      <div class="tl">The easier step</div>
+      <div class="tv">$560,000</div>
+      <div class="tc">$9,000 reduction</div>
+      <div class="ts">Stays in the same search range, so the same buyers see it</div>
+    </div>
+    <div class="tier rec">
+      <div class="tl">Our recommendation</div>
+      <div class="tv">$550,000</div>
+      <div class="tc">$19,000 reduction</div>
+      <div class="ts">Reaches a new group of buyers searching at $550,000 and below</div>
+    </div>
+  </div>
+  <p>When we first started talking about pricing, $560,000 was more in line with the price point we were hoping for, and I know a move to $560,000 would feel much easier to accept. You invested $16,000 getting the home ready, and it really is in much better shape because of it. Then the market turned in a way none of us expected when interest rates moved up.</p>
+  <p>My honest opinion is that we may not be able to sell this home for more than $550,000 in today's market. The market is really tough right now. The buyers I am working with are backing off and lowering the price ranges they search in. Moving to $560,000 would not be a meaningful difference to them.</p>
+  <h3>Why not start at $560,000?</h3>
+  <p>A move to $560,000 probably feels better, and I understand why. Realistically, though, I think we are going to end up at $550,000. If we step down to $560,000 first, we spend the relaunch at a price that keeps us in front of the same buyers who have already passed, and we likely face a second reduction a few weeks later with less momentum behind it.</p>
+  <p>A more assertive drop now gives us our best shot. Paired with the re-list, the home comes back as a new listing at a new price point, in front of a new group of buyers, at the moment it has the most attention.</p>
+  <div class="callout"><p><strong>$550,000 puts your home in a new search range.</strong> Zillow price searches run in $25,000 to $50,000 increments. At $550,000, the home appears for a whole group of buyers searching a lower price range who are not seeing it today, and paired with the relaunch, that can bring a wave of new attention.</p></div>
+  <p>I recognize this is a bigger step than we planned, and the decision is yours. I would rather recommend the move I believe will sell your home than a smaller one that leaves us in the same position a few weeks from now.</p>
+  <p>Next week we will be watching Zillow views per day and save rate against the same competitors, and whether showing requests return after the relaunch.</p>
+</section>
+
+<section>
+  <h2>Five relevant nearby properties</h2>
+  <p>The current MLS snapshot includes seven other active choices, two pending homes, five closed sales, one withdrawn listing, and four expired listings. These five properties provide the clearest context for our pricing discussion.</p>
+  <div class="tscroll">
+    <table>
+      <thead><tr><th>Property</th><th class="n">Miles</th><th>Status</th><th class="n">Price</th><th class="n">Beds/Baths</th><th class="n">Finished sq ft</th></tr></thead>
+      <tbody>
+        <tr><td>5482 S Salida Street</td><td class="n">0.3</td><td>Closed</td><td class="n"><strong>$570,000</strong></td><td class="n">4 / 3</td><td class="n">2,673</td></tr>
+        <tr><td>16575 E Prentice Avenue</td><td class="n">0.4</td><td>Pending</td><td class="n"><strong>$599,000</strong></td><td class="n">4 / 3</td><td class="n">2,374</td></tr>
+        <tr><td>5200 S Memphis Court</td><td class="n">0.6</td><td>Active</td><td class="n"><strong>$594,900</strong></td><td class="n">3 / 3</td><td class="n">2,294</td></tr>
+        <tr><td>5934 S Yampa Street</td><td class="n">1.0</td><td>Closed</td><td class="n"><strong>$560,000</strong></td><td class="n">3 / 3</td><td class="n">1,950</td></tr>
+        <tr><td>18171 E Crestridge Drive</td><td class="n">0.7</td><td>Withdrawn</td><td class="n"><strong>$559,000</strong></td><td class="n">4 / 3</td><td class="n">2,415</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Source: REcolorado Matrix report provided September 28, 2026. Prices shown are the report's price field.</p>
+  <h3>What the comparison tells us</h3>
+  <p>The closest four-bedroom closed comparison is 5482 S Salida Street at $570,000, but it has more finished square footage. Another nearby home closed at $560,000, while a similar-sized four-bedroom listing was withdrawn at $559,000. A pending sale at $599,000 confirms that buyers are still making decisions, but they are being selective. Combined with slowing online traffic and no showings this week, the pattern suggests the home needs both more buyer reach and a sharper value message.</p>
+</section>
+
+<section>
+  <h2>Why waiting for spring is not guaranteed to help</h2>
+  <p>Spring often brings more buyers, but it also usually brings more competing listings. If mortgage rates remain elevated or buyer confidence softens further, the seasonal increase in activity may not produce a better result. I do not want to create unnecessary urgency, but I also do not think we should assume that waiting will automatically improve our position. Acting now with a meaningful adjustment and a relaunch gives us the best chance to create new traffic.</p>
+</section>
+
+<section>
+  <h2>Next steps</h2>
+  <ol class="steps">
+    <li><div><b>Adjust to $550,000</b>Move into a new Zillow search range and in front of buyers who are not seeing the home today.</div></li>
+    <li><div><b>Relaunch as a new listing</b>Expire and re-list the next day with a new lead photo and new photos of the rocks and stained deck in front.</div></li>
+    <li><div><b>Refresh buyer attention</b>Update the marketing around the relaunch and follow up with agents and buyers who have already viewed or saved the listing.</div></li>
+    <li><div><b>Measure the response</b>Track showing activity and the same Zillow competitors closely, and keep you informed before recommending any additional action.</div></li>
+  </ol>
+  <p>I want this to remain a collaborative decision, and I am happy to talk through the timing or any concerns you have. Our recommendation is to move to $550,000, relaunch the listing with refreshed photos, and evaluate the buyer response from there.</p>
+  <div class="sign"><b>Jake Freedle</b>Freedle &amp; Associates</div>
+</section>
+
+</div>
+<footer>
+  <div class="wrap">Freedle &amp; Associates &nbsp;|&nbsp; <a href="tel:7209346583">720-934-6583</a> &nbsp;|&nbsp; <a href="mailto:jake@gofreedle.com">jake@gofreedle.com</a> &nbsp;|&nbsp; <a href="https://gofreedle.com">gofreedle.com</a></div>
+</footer>
+</body>
+</html>
