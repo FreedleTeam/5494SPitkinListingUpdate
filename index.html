@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Listing Update: The Competition at $550,000 | 5494 S Pitkin Street</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#3057A7; --blue:#5EA1C3; --slate:#575B5C; --gold:#FFD372; --brown:#85714D;
+    --bg:#faf9f6; --surface:#ffffff; --soft:#fbfaf7; --line:#e4e0d8;
+    --ink:#242424; --muted:#5c5c5c; --heading:#3057A7; --accent:#5EA1C3;
+    --green:#2f6b45; --red:#a8402f; --callout:#fdf6e3; --warn:#fbeeea; --win:#eaf3ee;
+    --head-font:'Poppins','Gotham','Segoe UI',Arial,sans-serif;
+    --body-font:'Roboto',Arial,Helvetica,sans-serif;
+    color-scheme:light;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14171c; --surface:#1b1f26; --soft:#222731; --line:#343a46;
+      --ink:#e7e6e3; --muted:#a9adb4; --heading:#8fb3f0; --accent:#7fbad8;
+      --green:#7cc496; --red:#f0947f; --callout:#2c2a20; --warn:#33221f; --win:#1c2c23;
+      color-scheme:dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14171c; --surface:#1b1f26; --soft:#222731; --line:#343a46;
+    --ink:#e7e6e3; --muted:#a9adb4; --heading:#8fb3f0; --accent:#7fbad8;
+    --green:#7cc496; --red:#f0947f; --callout:#2c2a20; --warn:#33221f; --win:#1c2c23;
+    color-scheme:dark;
+  }
+  html{ scroll-padding-top:env(safe-area-inset-top,0px); }
+  *,*::before,*::after{ box-sizing:border-box; }
+  body{ margin:0; font-family:var(--body-font); font-weight:300; color:var(--ink); background:var(--bg); line-height:1.6; }
+  b,strong{ font-weight:500; }
+  a{ color:var(--heading); }
+  a:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+  .wrap{ max-width:900px; margin:0 auto; background:var(--surface); }
+
+  .cover{ background:linear-gradient(135deg,#3057A7 0%,#5EA1C3 100%); color:#fff; padding:56px 56px 48px; }
+  .eyebrow{ font-family:var(--head-font); text-transform:uppercase; letter-spacing:.14em; font-size:12px; color:var(--gold); font-weight:600; margin-bottom:14px; }
+  .addr{ font-family:var(--head-font); font-size:30px; font-weight:600; line-height:1.25; margin-bottom:6px; }
+  .cover-sub{ font-size:15px; opacity:.9; margin-bottom:22px; }
+  .meta{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; border-top:1px solid rgba(255,255,255,.28); padding-top:18px; font-size:14px; }
+  .meta span{ display:block; font-family:var(--head-font); text-transform:uppercase; letter-spacing:.08em; font-size:10px; color:rgba(255,255,255,.75); margin-bottom:4px; }
+
+  section{ padding:36px 56px; border-bottom:1px solid var(--line); }
+  .kicker{ font-family:var(--head-font); text-transform:uppercase; letter-spacing:.1em; font-size:11px; font-weight:600; color:var(--accent); margin-bottom:8px; }
+  h2{ font-family:var(--head-font); font-size:22px; font-weight:600; margin:0 0 6px; color:var(--heading); line-height:1.3; }
+  h3{ font-family:var(--head-font); font-size:16px; font-weight:600; margin:0 0 4px; color:var(--heading); }
+  .sub{ color:var(--muted); font-size:13px; margin-bottom:18px; }
+  p{ font-size:15px; max-width:72ch; }
+
+  .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:22px 0; }
+  .stat-card{ border:1px solid var(--line); border-radius:8px; padding:16px 12px; text-align:center; background:var(--soft); }
+  .stat-card .num{ font-family:var(--head-font); font-size:26px; font-weight:700; color:var(--heading); line-height:1.2; }
+  .stat-card .lbl{ font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin-top:6px; line-height:1.4; }
+  .stat-card.win{ background:var(--win); }
+  .stat-card.win .num{ color:var(--green); }
+  .stat-card.flag .num{ color:var(--red); }
+
+  .callout{ background:var(--callout); border-left:4px solid var(--gold); padding:16px 20px; border-radius:0 6px 6px 0; margin:20px 0; font-size:15px; }
+  .callout p{ margin:0 0 10px; } .callout p:last-child{ margin:0; }
+  .callout.warn{ background:var(--warn); border-left-color:var(--red); }
+
+  .table-scroll{ overflow-x:auto; margin:18px 0; border:1px solid var(--line); border-radius:8px; }
+  table{ width:100%; min-width:760px; border-collapse:collapse; table-layout:fixed; font-size:13px; }
+  th{ font-family:var(--head-font); background:#3057A7; color:#fff; text-align:left; padding:9px 10px; font-size:11px; font-weight:500; text-transform:uppercase; letter-spacing:.04em; vertical-align:bottom; }
+  td{ padding:9px 10px; border-bottom:1px solid var(--line); vertical-align:top; word-wrap:break-word; overflow-wrap:break-word; }
+  tr:nth-child(even) td{ background:var(--soft); }
+  tr.subject td{ background:var(--callout) !important; font-weight:500; }
+  td.n, th.n{ text-align:right; }
+
+  .homes{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:20px 0; }
+  .home{ border:1px solid var(--line); border-radius:8px; padding:16px 18px; background:var(--surface); }
+  .home .tag{ font-size:12px; color:var(--muted); margin-bottom:8px; }
+  .home p{ font-size:14px; margin:0; }
+  .home.feature{ grid-column:1 / -1; border-color:var(--gold); border-width:2px; }
+
+  .vs{ display:grid; grid-template-columns:1.1fr 1fr 1fr; border:1px solid var(--line); border-radius:8px; overflow:hidden; margin:20px 0; font-size:14px; }
+  .vs div{ padding:9px 14px; border-bottom:1px solid var(--line); }
+  .vs .h{ font-family:var(--head-font); font-weight:600; font-size:12px; background:#3057A7; color:#fff; }
+  .vs .k{ color:var(--muted); }
+  .vs .last{ border-bottom:none; }
+
+  .paths{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:20px 0; }
+  .path{ border:1px solid var(--line); border-radius:8px; padding:18px 20px; background:var(--soft); }
+  .path h3{ margin-bottom:10px; }
+  .path ul{ margin:0; padding-left:18px; font-size:14px; }
+  .path li{ margin-bottom:8px; }
+
+  .signoff{ font-family:var(--head-font); font-weight:500; color:var(--heading); margin-top:24px; }
+
+  footer{ padding:28px 56px 36px; background:#575B5C; color:#f0efec; font-size:12px; }
+  footer b{ font-family:var(--head-font); color:#FFD372; font-size:14px; letter-spacing:.02em; font-weight:600; }
+  footer .tag{ margin-top:2px; }
+  footer .disc{ opacity:.75; max-width:700px; margin-top:10px; }
+
+  @media (max-width:720px){
+    .meta{ grid-template-columns:repeat(2,1fr); }
+    .stat-grid{ grid-template-columns:repeat(2,1fr); }
+    .homes,.paths{ grid-template-columns:1fr; }
+    section{ padding:28px 22px; }
+    .cover{ padding:40px 22px; }
+    .addr{ font-size:24px; }
+    footer{ padding:24px 22px; }
+    .vs{ font-size:13px; }
+    .vs div{ padding:8px 10px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="cover">
+    <div class="eyebrow">Listing Update</div>
+    <div class="addr">5494 S Pitkin Street, Aurora, CO 80015</div>
+    <div class="cover-sub">The competition at $550,000, and what it means for our next move</div>
+    <div class="meta">
+      <div><span>Current List Price</span>$550,000</div>
+      <div><span>Days in MLS</span>76</div>
+      <div><span>Listed</span>August 5, 2026</div>
+      <div><span>Data As Of</span>October 20, 2026</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="kicker">Overview</div>
+    <h2>Who We Have to Beat</h2>
+    <p>This week I want to look at one thing only: the competition. These are the homes a buyer in our price range is choosing between right now, and they're the ones we have to be the better value against.</p>
+    <p>Here's the short version. On the numbers alone, your house is one of the biggest homes in this group and one of the better values per square foot. Buyers aren't passing on it because of size. They're passing on it because of condition, layout, and the yard. That's where the other homes at $550,000 are beating us.</p>
+  </section>
+
+  <section>
+    <div class="kicker">The Field</div>
+    <h2>36 Active Homes, $500,000 to $550,000</h2>
+    <div class="sub">Comparable active listings in the surrounding area, including yours</div>
+    <div class="stat-grid">
+      <div class="stat-card"><div class="num">35</div><div class="lbl">Competing Homes</div></div>
+      <div class="stat-card flag"><div class="num">20</div><div class="lbl">Have Cut Price</div></div>
+      <div class="stat-card"><div class="num">$26,765</div><div class="lbl">Average Cut (4.7%)</div></div>
+      <div class="stat-card"><div class="num">46</div><div class="lbl">Median Days in MLS</div></div>
+    </div>
+    <p>Every other home in this group is priced at or below yours, and the median is $535,000. More than half have already reduced, by an average of $26,765, and 13 have been on the market longer than 60 days. Buyers in this range have plenty to choose from, and most sellers have already had to adjust.</p>
+  </section>
+
+  <section>
+    <div class="kicker">Where You Win</div>
+    <h2>More House for the Money</h2>
+    <div class="sub">How your home ranks against all 36 active listings</div>
+    <div class="stat-grid">
+      <div class="stat-card win"><div class="num">2,327</div><div class="lbl">Above-Grade Finished SqFt<br>2nd of 36</div></div>
+      <div class="stat-card win"><div class="num">3,310</div><div class="lbl">Total SqFt<br>4th of 36</div></div>
+      <div class="stat-card win"><div class="num">$236</div><div class="lbl">Per Finished SqFt<br>Others: $263 Median</div></div>
+      <div class="stat-card"><div class="num">2</div><div class="lbl">Garage Spaces<br>Same as 32 of 35</div></div>
+    </div>
+    <p>Only one active home has more finished space above ground than yours. Your total square footage ranks 4th, though about 980 of those square feet are unfinished basement, which buyers value less than finished space. At $550,000, you're at $236 per finished square foot, compared to a median of $263 for the other homes. Your lot, at 8,494 square feet, is also the largest of any home at $550,000.</p>
+    <p>If buyers were shopping purely on space and price per square foot, this house would already be one of the strongest options out there. They aren't, and that's the important part.</p>
+  </section>
+
+  <section>
+    <div class="kicker">Where You're Losing</div>
+    <h2>Buyers Are Seeing a Project</h2>
+    <p>We put in as much updating as the budget allowed, and it made a real difference. But buyers at this price are looking for turnkey, and they're still walking through your home and seeing work ahead of them. Three things keep coming up:</p>
+    <div class="callout warn">
+      <p><b>The primary bathroom layout.</b> The sink sits out in the bedroom rather than enclosed with the rest of the bathroom. It's the kind of thing a buyer notices right away and starts mentally pricing a remodel.</p>
+      <p><b>Updating overall.</b> Compared to the most updated homes in this group, the finishes still read as partially done. Buyers comparing side by side are noticing the difference.</p>
+      <p><b>The landscaping.</b> The large lot is an asset on paper, but right now it reads as a yard that needs work. Several competing homes are marketing finished, ready-to-use outdoor space.</p>
+    </div>
+    <p>That's the honest gap. On space and price per square foot, we're ahead. On condition and layout, the most updated homes at $550,000 are ahead of us, and turnkey is what buyers in this range are paying for right now.</p>
+  </section>
+
+  <section>
+    <div class="kicker">Your Direct Competition</div>
+    <h2>The Six Other Homes at $550,000</h2>
+    <div class="sub">Every active home listed at exactly $550,000. Addresses link to Zillow.</div>
+    <div class="table-scroll">
+      <table>
+        <colgroup>
+          <col style="width:20%"><col style="width:14%"><col style="width:7%"><col style="width:7%"><col style="width:9%"><col style="width:9%"><col style="width:8%"><col style="width:10%"><col style="width:16%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Address</th><th>Subdivision</th><th class="n">Built</th><th class="n">Bd/Ba</th><th class="n">Fin. SqFt</th><th class="n">Total SqFt</th><th class="n">Garage</th><th class="n">$/Fin. SqFt</th><th class="n">Days / Started At</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="subject"><td>5494 S Pitkin St (yours)</td><td>Smoky Hill</td><td class="n">1982</td><td class="n">4/3</td><td class="n">2,327</td><td class="n">3,310</td><td class="n">2</td><td class="n">$236</td><td class="n">76 / $579,000</td></tr>
+          <tr><td><a href="https://www.zillow.com/homes/5439-S-Waco-St-Centennial-CO-80015_rb/" target="_blank" rel="noopener">5439 S Waco St</a></td><td>Smoky Hill</td><td class="n">1980</td><td class="n">4/3</td><td class="n">2,092</td><td class="n">2,867</td><td class="n">2</td><td class="n">$263</td><td class="n">5 / $550,000</td></tr>
+          <tr><td><a href="https://www.zillow.com/homes/4860-S-Picadilly-Ct-Aurora-CO-80015_rb/" target="_blank" rel="noopener">4860 S Picadilly Ct</a></td><td>Copperleaf</td><td class="n">2011</td><td class="n">4/4</td><td class="n">2,347</td><td class="n">2,423</td><td class="n">2</td><td class="n">$234</td><td class="n">24 / $550,000</td></tr>
+          <tr><td><a href="https://www.zillow.com/homes/5582-S-Jericho-Way-Centennial-CO-80015_rb/" target="_blank" rel="noopener">5582 S Jericho Way</a></td><td>Park View Commons</td><td class="n">1992</td><td class="n">4/3</td><td class="n">1,826</td><td class="n">2,630</td><td class="n">3</td><td class="n">$301</td><td class="n">33 / $550,000</td></tr>
+          <tr><td><a href="https://www.zillow.com/homes/14523-E-Wagon-Trail-Dr-Aurora-CO-80015_rb/" target="_blank" rel="noopener">14523 E Wagon Trail Dr</a></td><td>Woodgate</td><td class="n">1983</td><td class="n">3/3</td><td class="n">2,138</td><td class="n">2,838</td><td class="n">2</td><td class="n">$257</td><td class="n">75 / $559,900</td></tr>
+          <tr><td><a href="https://www.zillow.com/homes/4820-S-Kirk-Way-Aurora-CO-80015_rb/" target="_blank" rel="noopener">4820 S Kirk Way</a></td><td>Willow Trace</td><td class="n">2002</td><td class="n">3/3</td><td class="n">1,957</td><td class="n">2,507</td><td class="n">3</td><td class="n">$281</td><td class="n">78 / $585,000</td></tr>
+          <tr><td><a href="https://www.zillow.com/homes/5647-S-Quatar-Ct-Centennial-CO-80015_rb/" target="_blank" rel="noopener">5647 S Quatar Ct</a></td><td>Trail Ridge</td><td class="n">1997</td><td class="n">4/3</td><td class="n">2,788</td><td class="n">2,860</td><td class="n">2</td><td class="n">$197</td><td class="n">103 / $585,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout">
+      <p><b>$550,000 is where slow listings are landing.</b> Four of the seven homes at this price, including yours, started higher and came down to $550,000 after 75 to 103 days. None of them has sold yet. This price alone isn't pulling buyers in. The homes that sell here will be the ones that feel like the best overall package.</p>
+    </div>
+
+    <div class="homes">
+      <div class="home feature">
+        <h3><a href="https://www.zillow.com/homes/5439-S-Waco-St-Centennial-CO-80015_rb/" target="_blank" rel="noopener">5439 S Waco St</a></h3>
+        <div class="tag">Smoky Hill, listed October 15, 5 days in MLS</div>
+        <p>The closest comparison to your home, and a nice one. More on it below.</p>
+      </div>
+      <div class="home">
+        <h3><a href="https://www.zillow.com/homes/4860-S-Picadilly-Ct-Aurora-CO-80015_rb/" target="_blank" rel="noopener">4860 S Picadilly Ct</a></h3>
+        <div class="tag">Copperleaf, 24 days in MLS</div>
+        <p>Newer 2011 build with a finished basement. Its lot is less than half the size of yours, and its HOA dues run $1,080 a year.</p>
+      </div>
+      <div class="home">
+        <h3><a href="https://www.zillow.com/homes/5582-S-Jericho-Way-Centennial-CO-80015_rb/" target="_blank" rel="noopener">5582 S Jericho Way</a></h3>
+        <div class="tag">Park View Commons, 33 days in MLS</div>
+        <p>Smaller, at 1,826 finished square feet, but it has a 3-car garage, a cul-de-sac lot, and backs up to the community pool. Unfinished basement.</p>
+      </div>
+      <div class="home">
+        <h3><a href="https://www.zillow.com/homes/14523-E-Wagon-Trail-Dr-Aurora-CO-80015_rb/" target="_blank" rel="noopener">14523 E Wagon Trail Dr</a></h3>
+        <div class="tag">Woodgate, 75 days in MLS, reduced from $559,900</div>
+        <p>Similar age to yours on a corner lot, with new quartz kitchen counters and no HOA. Unfinished basement.</p>
+      </div>
+      <div class="home">
+        <h3><a href="https://www.zillow.com/homes/4820-S-Kirk-Way-Aurora-CO-80015_rb/" target="_blank" rel="noopener">4820 S Kirk Way</a></h3>
+        <div class="tag">Willow Trace, 78 days in MLS, reduced from $585,000</div>
+        <p>2002 build with a 3-car garage, new furnace, AC, and water heater, new quartz counters, and an updated primary bath. The listing advertises a $5,000 closing cost credit with a full-price offer.</p>
+      </div>
+      <div class="home">
+        <h3><a href="https://www.zillow.com/homes/5647-S-Quatar-Ct-Centennial-CO-80015_rb/" target="_blank" rel="noopener">5647 S Quatar Ct</a></h3>
+        <div class="tag">Trail Ridge, 103 days in MLS, reduced from $585,000</div>
+        <p>Ranch with a finished walkout basement and an updated kitchen. Lowest price per finished square foot in this group, and it still hasn't sold after 103 days.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p><b>One thing I'd ask of you:</b> take some time this week to look through these six homes online, the photos especially. Go through them the way a buyer would, with yours in the mix, and ask yourself which one you'd choose at $550,000 and why. I think it'll make the rest of this conversation a lot clearer, and I'd like to hear your take.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">The One to Watch</div>
+    <h2>5439 S Waco Street</h2>
+    <div class="sub">Same neighborhood, same schools, same price</div>
+    <div class="vs">
+      <div class="h"></div><div class="h">Yours</div><div class="h">Waco</div>
+      <div class="k">Subdivision</div><div>Smoky Hill</div><div>Smoky Hill</div>
+      <div class="k">Schools</div><div>Trails West / Grandview</div><div>Trails West / Grandview</div>
+      <div class="k">Year built</div><div>1982</div><div>1980</div>
+      <div class="k">Bed / bath</div><div>4 / 3</div><div>4 / 3</div>
+      <div class="k">Finished sqft</div><div>2,327</div><div>2,092</div>
+      <div class="k">Lot size</div><div>8,494 sqft</div><div>8,015 sqft</div>
+      <div class="k">$/finished sqft</div><div>$236</div><div>$263</div>
+      <div class="k last">Days in MLS</div><div class="last">76</div><div class="last">5</div>
+    </div>
+    <p>This is the cleanest side-by-side comparison you'll get. Waco is about 235 square feet smaller than yours, in the same neighborhood with the same schools, at the same price. What it offers is turnkey: according to its listing, new hardwood floors through the main level, remodeled bathrooms, new carpet and paint, a newer roof, gutters, furnace, AC, and water heater, and a finished, landscaped backyard with a covered patio and a new gazebo. It's a nice house.</p>
+    <p>How it does over the next few weeks will tell us a lot. If it sells quickly, and especially if it sells above asking, that's real evidence of what Smoky Hill homes can bring, and it would help our case at $550,000. But we should go in clear-eyed about the other side of that. If a buyer pays $550,000 for Waco, they're paying it for a house that needs nothing. That sale will be the yardstick every buyer uses when they walk through yours.</p>
+  </section>
+
+  <section>
+    <div class="kicker">The Decision</div>
+    <h2>Selling This Year vs. Waiting for Spring</h2>
+    <p>This one is your call, and I want to give you my honest read on both paths.</p>
+    <div class="paths">
+      <div class="path">
+        <h3>Reduce the price now</h3>
+        <ul>
+          <li>I believe that to sell this year, the price needs to come down.</li>
+          <li>At $550,000, buyers are comparing you directly against homes like Waco that need no work. A lower price lets them account for the bathroom, the updating, and the yard and still feel good about the deal.</li>
+          <li>Selling now ends the carrying costs and takes the uncertainty about where prices go next off the table.</li>
+        </ul>
+      </div>
+      <div class="path">
+        <h3>Hold and relaunch in spring</h3>
+        <ul>
+          <li>My hope is that $550,000 could be achievable next spring, when more buyers are typically out. I can't tell you whether that's realistic.</li>
+          <li>Nobody knows yet what spring will look like. If prices keep drifting down through winter, even an improving market may not get back to where we are today, and we don't know how much ground it would recover.</li>
+        </ul>
+      </div>
+    </div>
+    <p>Whichever way you decide, I'm in this with you for as long as you are. If you want to sell this year, let's talk through the number together. If you'd rather wait for spring, we'll use the time to put the house in the strongest position we can for the relaunch.</p>
+    <div class="callout">
+      <p><b>What I'll be watching in the meantime:</b> whether Waco goes under contract and how quickly, whether any of the homes sitting at $550,000 for 75 days or more find a buyer, and any change in showing activity on yours.</p>
+    </div>
+    <div class="signoff">Jake Freedle</div>
+  </section>
+
+  <footer>
+    <b>Freedle And Associates</b>
+    <div class="tag">Helping You Find Your Place.</div>
+    <div class="disc">Prepared from REcolorado MLS data for active listings as of October 20, 2026. Square footage is from public records as reported in the MLS. Home descriptions summarize each home's own MLS listing and have not been independently verified. Market conditions can shift; figures should be reconfirmed before any pricing decision.</div>
+  </footer>
+
+</div>
+</body>
+</html>
